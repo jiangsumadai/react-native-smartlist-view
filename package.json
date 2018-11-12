@@ -1,0 +1,27 @@
+{
+  "name": "@edwardzhou/react-native-smartlist-view",
+  "version": "1.0.0",
+  "description": "Easy way to use flatlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangsumadai/react-native-smartlist-view.git"
+  },
+  "keywords": [
+    "list",
+    "smart",
+    "smart-list",
+    "smartlistview",
+    "react-native-smart-list",
+    "react-native-smartlist-view"
+  ],
+  "author": "edward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiangsumadai/react-native-smartlist-view/issues"
+  },
+  "homepage": "https://github.com/jiangsumadai/react-native-smartlist-view#readme"
+}
