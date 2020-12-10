@@ -88,6 +88,15 @@ export default class SmartListView extends Component {
     this._fetch(pageInit);
   }
 
+  updateDataSource(dataSource = [], totalPage = 0, noneData = true, page = 1) {
+    this.setState({
+      dataSource: dataSource.length === 0 ? ['showEmptyView'] : dataSource,
+      totalPage: totalPage === 0 ? 0 : totalPage,
+      noneData,
+      page,
+    });
+  }
+
   render() {
     return (
       <FlatList
