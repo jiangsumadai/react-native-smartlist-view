@@ -18,8 +18,6 @@ export default class MyComponent extends Component {
   render() {
     return (
       <SmartListView
-          style={{ flex: 1 }}
-          pagination
           renderItem={({ item }) => {
             return (
               <YourCell
@@ -28,12 +26,21 @@ export default class MyComponent extends Component {
               />
             );
           }}
-          onRefresh={(...args) => yourInterface(YourParams, ...args)}
+          onRefresh={(page, pageSize, successCallback, errorCallback) => yourInterface(YourParams)}
           {...this.props}
         />
     );
   }
 }
+```
+2.开放的接口
+1）刷新
+```
+refresh()
+```
+2）更新数据源
+```
+updateDataSource()
 ```
 
 ## License
